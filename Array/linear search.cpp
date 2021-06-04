@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 
+//time complexity of thi fucntion is O(n);
+
 using namespace std;
 
 int linearSearch(int arr[],int n,int key){
