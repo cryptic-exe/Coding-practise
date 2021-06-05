@@ -27,7 +27,18 @@ void SelectionSort(int arr[],int n){
 }
 
 bool BinarySearch(int arr[],int n ,int key){
-
+    int s=0, e=n, m;
+    for (int i = 0; i < n;i++){
+        m = (s + e) / 2;
+        if(key==arr[m])
+            return true;
+        else if(key>arr[m]){
+            s = m + 1;
+        }
+        else
+            e = m - 1;
+    }
+    return false;
 }
 
 int main(){
