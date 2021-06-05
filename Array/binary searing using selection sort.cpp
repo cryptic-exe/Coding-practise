@@ -9,23 +9,25 @@ void SelectionSort(int arr[],int n){
         int loc = i;
         for (int j = i + 1; j < n; j++)
         {
-            if(arr[]>arr[j]){
+            if(arr[loc]>arr[j]){
                 loc = j;
-                min = arr[j];
+                
             }
-            swap(arr[loc],arr[i]);
         }
+        if(loc!=i)
+        swap(arr[loc],arr[i]);
     }
-    for (int i = 0; i < n; i++){
+    cout << "Sorted Array:" << endl
+         << endl; 
+    for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
 }
 
 bool BinarySearch(int arr[],int n ,int key){
-    // for (int i = 0; i < n;i++){
-    //     cout << arr[i];
-    // }
+
 }
 
 int main(){
